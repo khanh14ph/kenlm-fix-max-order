@@ -1,5 +1,5 @@
 #ifndef LM_MAX_ORDER_H
-#define LM_MAX_ORDER_H
+#define LM_MAX_ORDER_H = 10
 /* IF YOUR BUILD SYSTEM PASSES -DKENLM_MAX_ORDER, THEN CHANGE THE BUILD SYSTEM.
  * If not, this is the default maximum order.
  * Having this limit means that State can be
