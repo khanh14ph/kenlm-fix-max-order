@@ -36,7 +36,7 @@ target_link_libraries(kenlm PUBLIC kenlm_util Threads::Threads)
 # Since headers are relative to `include/kenlm` at install time, not just `include`
 target_include_directories(kenlm PUBLIC $<INSTALL_INTERFACE:include/kenlm>)
 
-target_compile_definitions(kenlm PUBLIC -DKENLM_MAX_ORDER=${KENLM_MAX_ORDER})
+target_compile_definitions(kenlm PUBLIC -DKENLM_MAX_ORDER= 20)
 
 # This directory has children that need to be processed
 add_subdirectory(builder)
